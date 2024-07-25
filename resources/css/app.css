@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    background-color: #708090; /* Slate Gray */
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #556B2F; /* Olive Green */
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Page */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #FFBF00; /* Amber */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e0a800; /* Slightly darker Amber */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media .whatsapp { background-color: #25D366; }
+.social-media .instagram { background-color: #E1306C; }
+.social-media .facebook { background-color: #3b5998; }
+.social-media .tiktok { background-color: #000000; }
+.social-media .twitter { background-color: #1DA1F2; }
+.social-media .linkedin { background-color: #0077B5; }
+
+.map-section {
+    margin-bottom: 30px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://gadrox.com/images/WhatsAppImage2023-11-09at07.56.561.jpeg') no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.hero-section .btn-primary {
+    margin-top: 20px;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Adjust height as needed */
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Reviews and Gallery */
+.reviews, .gallery, .calendar {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.review-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: calc(33.333% - 10px);
+    margin: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Calendar Section */
+.calendar {
+    padding: 20px;
+    text-align: center;
+}
+
+#calendar {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-us {
+    padding: 20px;
+}
+
+.mission-vision, .core-values, .team {
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.team-member img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Circular images */
+    margin-right: 15px;
+}
+
+/* Profile Section */
+.profile-page {
+    padding: 20px;
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.status.ongoing {
+    background-color: #007bff;
+    color: white;
+}
+
+.status.pending {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.status.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Logout Page */
+.logout-confirmation {
+    padding: 50px 0;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .social-media a {
+        font-size: 1.2rem;
+        margin: 5px;
+        padding: 12px;
+    }
+
+    .gallery-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .gallery-item {
+        width: calc(100% - 10px);
+    }
+}
